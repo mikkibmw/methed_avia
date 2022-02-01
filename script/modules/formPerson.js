@@ -23,7 +23,7 @@ const createFormPerson = (n) =>{
 
   const inputName = createElement('input',{
     className: "field__input",
-    id: "name0",
+    id: `name${n}`,
     name: "name",
     type: "text",
     placeholder: "Введите ваше ФИО",
@@ -38,13 +38,13 @@ const createFormPerson = (n) =>{
 
   const labelTicket = createElement('label',{
     className: 'field__label',
-    for: `name${n}`,
+    for: `ticket${n}`,
     textContent: 'Номер билета (10 цифр)',
   });
 
   const inputTicket = createElement('input',{
     className: "field__input",
-    id: "ticket0",
+    id: `ticket${n}`,
     name: "ticket",
     type: "text",
     placeholder: "Номер билета",
